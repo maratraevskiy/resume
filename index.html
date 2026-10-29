@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume of Marat Raevskiy</title>
+<style>
+    /* Mirrors catb.org/~esr/resume.html, which uses browser defaults only.
+       Font is pinned (not left to the browser) and ligatures/kerning/calt are
+       off so Chrome-printed PDFs keep a clean copy-paste text layer. */
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-feature-settings: "liga" 0, "clig" 0, "dlig" 0, "kern" 0, "calt" 0;
+        color: #000;
+        background: #fff;
+    }
+
+    h1.title {
+        text-align: center;
+    }
+
+    @media print {
+        @page {
+            size: A4;
+            margin: 16mm 14mm;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h1,
+        h2 {
+            break-after: avoid;
+            page-break-after: avoid;
+        }
+
+        li {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1 class="title">Resume of Marat Raevskiy</h1>
+
+<h1>Work Experience</h1>
+
+<h2>Product Manager and Business Systems Analyst, Omnishelf (April 2026 to present)</h2>
+
+<p>Omnishelf is a retail accelerator that connects online and offline sales channels to help brands scale with major U.S. and Canadian retailers. A former manager of mine, now a partner at the company, recommended me, and I joined in April 2026 as a project manager for content. I now lead several streams: content, raising the visibility of our listings on marketplaces, and, above all, the order-management platform, which I own. The platform serves many different retailers and sellers, and through it I streamline multichannel order operations and launch customer-facing capabilities.</p>
+
+<p>My responsibilities have included:</p>
+<ul>
+    <li>Streamlining and automating order processing across sales channels. Warehouse managers now spend half as much time uploading orders as they did before.</li>
+    <li>Building and deploying custom integrations with AI-assisted coding, saving the company up to $24K per month.</li>
+    <li>Launching the first phase of a customer-facing order-processing platform, which eliminated manual order transfers to customers.</li>
+    <li>Owning and launching the order-management platform, and personally onboarding clients onto it.</li>
+</ul>
+
+<h2>Independent Product Build, Capchur (June 2026 to present)</h2>
+
+<p>Capchur is my own project, which I build independently alongside my main work. It is an AI-native Shopify app for zero-party data capture, aimed at small-business Shopify owners, with a simple user experience and accessible pricing. The landing page is at <a href="https://capchur.it">capchur.it</a>.</p>
+
+<p>My work on it includes:</p>
+<ul>
+    <li>Defining the product: its audience, scope, user experience, and pricing approach.</li>
+    <li>Developing the app locally with AI-assisted coding, Shopify Web Components, Shopify App Bridge, and Dokploy.</li>
+</ul>
+
+<h2>Senior Product Manager, EmailMagnet (August 2022 to April 2026)</h2>
+
+<p>EmailMagnet is a B2B SaaS product for Shopify merchants, focused on e-commerce data capture, zero-party data, and GenAI-enabled growth tools. A university classmate and former colleague, then the company's Head of Product, recommended me. For most of this period I also worked on Monster Deals in parallel (see below). I grew from supporting a legacy solution to leading a new app from scratch and securing its first real clients.</p>
+
+<p>My responsibilities included:</p>
+<ul>
+    <li>Setting the roadmap and product direction for a new GenAI SaaS product and leading it through release. We shipped within 3 months with no scope resets.</li>
+    <li>Defining and launching an agentic popup builder for Shopify merchants. I designed its agentic workflow and RAG architecture with the developers, including agent roles, orchestration, data flows, interfaces, and fallback logic. I also built the RAG layer from zero. Popup creation time dropped from about 2 hours to under 2 minutes.</li>
+    <li>Defining an AI brand theme engine that pulls a Shopify store's colors and fonts automatically, cutting setup time by about 35%.</li>
+    <li>Integrating AI-based analysis into client campaigns, which raised campaign success rates by 10% on average.</li>
+    <li>Designing an end-to-end analytics and revenue-attribution architecture, covering events, identifiers, server-side flows, attribution rules, and acceptance criteria. The server-side attribution system helped retain 1 enterprise client and win 2 new accounts.</li>
+    <li>Designing a PostHog event schema from popup impression to checkout. It added 12+ events that we used for A/B tests, end-to-end analytics, and roadmap decisions.</li>
+    <li>Finding a 2x gap in email capture between iOS and Android in PostHog. I traced it to the keyboard covering the popup on small screens, and the fix raised iOS capture from about 3% to about 7%.</li>
+    <li>Raising the overall email capture rate by 50% through A/B tests of popup copy, targeting logic, trigger timing, placement, and formats.</li>
+    <li>Defining behavior-based popup triggers for scroll depth, time on page, cart value, and exit intent, which lifted secondary popup impressions by about 25%.</li>
+    <li>Analyzing onboarding friction after Shopify install and redesigning 1-click activation. Fewer steps stood between install and the first live popup, and 7-day activation improved by about 25%.</li>
+    <li>Analyzing the Klaviyo, Sendlane, and Shopify integrations: authentication, endpoints, payloads, JSON Schema data contracts, edge cases, and failure handling. I reverse-engineered Klaviyo and Sendlane API behavior across 3 endpoints, which cut integration rework by 50%.</li>
+    <li>Leading API integration discovery and defining data contracts before development started, which cut integration time by about 20%.</li>
+    <li>Integrating Shopify Polaris and the Shopify Admin API into the core product flow.</li>
+    <li>Designing a 4-tier billing model, from Free to Ultra, gated by capture limits and customization access. Free-to-paid conversion reached about 20% within 90 days.</li>
+    <li>Designing billing override tools and hidden enterprise tiers that supported 5+ high-volume B2B deals without custom engineering for each deal.</li>
+</ul>
+
+<h2>Senior Product Manager, Monster Deals (August 2022 to November 2024)</h2>
+
+<p>Monster Deals is a B2C e-commerce mobile app with approximately $100K MRR. I ran it in parallel with EmailMagnet. I started with onboarding and checkout improvements, then expanded my ownership across the catalog and the customer lifecycle to grow repeat purchases.</p>
+
+<p>My responsibilities included:</p>
+<ul>
+    <li>Analyzing payment gateway and checkout states, including authorizations, redirects, callbacks, webhooks, errors, and retries, and turning the findings into developer requirements. The resulting improvements raised payment authorization by about 5% to 8%.</li>
+    <li>Designing and running a Spin-n-Win onboarding A/B test that lifted the first-purchase rate for new users by 30%.</li>
+    <li>Diagnosing a 30% drop in repeat purchases after Android introduced a mandatory push-permission prompt. I used Stripe logs, platform analytics, and Pandas to analyze permission states and behavior, and shaped a bonus opt-in campaign that restored the previous baseline and added 10% incremental order volume.</li>
+    <li>Running a full product catalog replacement A/B test, which raised the 30-day second-purchase rate by 7%.</li>
+</ul>
+
+<h2>Senior UX Researcher, IKRA (2020 to 2022)</h2>
+
+<p>IKRA is an education and consulting company serving Visa, PMI, Coca-Cola, Tele2, and other enterprise clients. I had already done freelance research for IKRA and knew the team well, so I joined as a researcher and consultant and led several projects from the start. I then grew into leading client engagements and owning research projects end to end, working as a senior consultant in the strategy department and as curator of the IKRA School of Innovation. I also taught research and strategy to students in IKRA's professional-retraining courses.</p>
+
+<p>My responsibilities included:</p>
+<ul>
+    <li>Turning validated customer insights into redesigned support scenarios for Tele2, which raised its NPS from 7.0 to 8.5.</li>
+    <li>Researching small-business financing needs and helping develop lending programs for a major state-owned bank. The programs were implemented for a credit portfolio of approximately $4B.</li>
+    <li>Researching and developing Visa banking program concepts for Russian banks, including an instant installment product implemented on POS terminals.</li>
+    <li>Leading business analysis for 3 Visa banking programs over more than a year. I elicited requirements, mapped current and target processes, and defined business rules, use cases, and acceptance criteria. I aligned 3 stakeholder groups and cut approval cycles from 5+ rounds to 3.</li>
+    <li>Conducting C-level interviews and market research, and translating qualitative insights into delivery-ready product requirements for financial services programs.</li>
+</ul>
+
+<h2>Product Owner and UX Researcher, Accuraten (2016 to 2022)</h2>
+
+<p>Accuraten is a research and branding agency working with major Russian companies. A former colleague, the agency's strategy director, invited me in. I worked as an independent entrepreneur and was the agency's partner for research and strategy throughout. I joined as a researcher, then grew into owning full-cycle strategy projects, helping secure client relationships, and running the entire research practice. I worked with clients directly: I found new engagements, sold strategy and research projects, defended the results, and delivered the work end to end.</p>
+
+<p>My responsibilities included:</p>
+<ul>
+    <li>Leading business analysis for Zyfra's mining digitization portfolio through stakeholder interviews, a capability inventory, taxonomy definition, relationship mapping, and business rules. The result was a unified brand architecture for the portfolio.</li>
+    <li>Developing brand umbrella concepts for major industrial manufacturers.</li>
+    <li>Launching 3 new brands for a plastics manufacturer, translating its product strategy into market-ready brand concepts.</li>
+    <li>Launching a Korean tourism marketing project and extending it for 3 years, which turned the first campaign into a lasting client program.</li>
+</ul>
+
+<p>I left in 2022, when the agency shifted its focus to building websites, which was outside my expertise.</p>
+
+<h2>IT Project Manager, TBWA (April 2014 to February 2015)</h2>
+
+<p>TBWA is a global advertising agency whose clients include Michelin, adidas, Heineken, and others. I joined its Moscow office through a job board as an IT Project Manager, having already worked as a project manager in advertising agencies, and grew into leading key revenue-generating digital projects for adidas. I led cross-functional technology teams through the full delivery lifecycle, combining systems analysis with quality control.</p>
+
+<p>My responsibilities included:</p>
+<ul>
+    <li>Launching a new adidas running portal and supporting it after launch. I led a team of 10+ developers and designers, both in-house and outsourced.</li>
+    <li>Keeping the IT systems of the adidas running base at Luzhniki working, for 100+ visitors a month.</li>
+    <li>Launching the digital infrastructure for the &ldquo;Charge Your Friends&rdquo; (&ldquo;Zaryadi Druzey&rdquo;) advertising campaign, which won a Bronze Effie Russia in 2016.</li>
+</ul>
+
+<h2>IT Project Manager, Global Point Agency (April 2012 to February 2014)</h2>
+
+<p>Global Point is an advertising agency in Saint Petersburg that also develops software and does systems integration and content production. I joined through a job board as an IT Project Manager, having already worked as a project manager in advertising agencies, and grew into leading key revenue-generating digital projects for Michelin and other clients.</p>
+
+<p>My responsibilities included:</p>
+<ul>
+    <li>Launching a new Michelin mobile website for Russian-speaking users, with 1000+ daily active users. Michelin selected it as its best project of 2012.</li>
+    <li>Launching and supporting a digital self-service tire-selection system at Michelin points of sale in 10+ Russian cities.</li>
+</ul>
+
+<h1>Technical Skills</h1>
+
+<h2>Product and Discovery:</h2>
+<p>Discovery is where I am strongest. I run user research, C-level interviews, and market research, and I turn the results into roadmaps, requirements, and pricing. As an analyst, I work in process mapping, business rules, use cases, data contracts, and acceptance criteria, and I am comfortable aligning several stakeholder groups around one scope. I have taken products from first research to launch in both B2B SaaS and B2C e-commerce.</p>
+
+<h2>Analytics and Experimentation:</h2>
+<p>I design event schemas and revenue attribution, run A/B tests, and analyze funnels, onboarding, and conversion. I prefer to make product decisions from experiment results and to find the cause of a metric change before proposing a fix.</p>
+
+<h2>AI and LLM:</h2>
+<p>I have designed and shipped generative and agentic AI features, including agent roles, orchestration, and fallback logic, and built RAG systems from zero. I build with AI-assisted coding: I write my own skills and harnesses for AI agents and build working web apps and integrations with them.</p>
+
+<h2>Integrations and Platforms:</h2>
+<p>I work API-first: I analyze third-party APIs down to authentication, endpoints, payloads, webhooks, and failure handling, and I write data contracts in JSON Schema. I know the Shopify platform in depth, including the Admin API, Polaris, App Bridge, Web Components, and OAuth. I also know the Klaviyo and Sendlane APIs.</p>
+
+<h2>Tools:</h2>
+<p>PostHog, GTM and GA4, SQL and PostgreSQL, Python with Pandas, Stripe logs, Shopify, Dokploy, and AI coding agents.</p>
+
+<h1>Communications Skills</h1>
+
+<p>I write clearly for both technical and business readers, from requirements and data contracts to research reports and strategy documents. Over the years I have written dozens of studies that companies used to launch products or make decisions. I have facilitated strategy sessions and research read-outs for Tele2, Philip Morris, large banks, and major industrial companies, for audiences from a handful of people up to about 100. I taught research and strategy in person to career-change students at IKRA from 2020 to 2022. Russian is my native language. I am fluent in English and have a basic command of Spanish and Italian.</p>
+
+<h1>Product Credits</h1>
+
+<p>Independent:</p>
+<ul>
+    <li>Capchur, an AI-native Shopify app for zero-party data capture (in development; <a href="https://capchur.it">capchur.it</a>).</li>
+</ul>
+
+<p>Shipped at employers:</p>
+<ul>
+    <li>EmailMagnet&rsquo;s GenAI SaaS app and its agentic popup builder, with a RAG layer and an AI brand theme engine.</li>
+    <li>EmailMagnet&rsquo;s server-side revenue attribution system and 4-tier billing model.</li>
+    <li>Omnishelf&rsquo;s customer-facing order-management platform, which I launched and onboarded clients onto.</li>
+    <li>An instant installment product for Russian banks, implemented on POS terminals (Visa program, IKRA).</li>
+    <li>Lending programs for small businesses at a major state-owned bank, covering an approximately $4B credit portfolio (IKRA).</li>
+</ul>
+
+<p>Brand and digital launches:</p>
+<ul>
+    <li>A unified brand architecture for Zyfra&rsquo;s mining digitization portfolio.</li>
+    <li>3 new brands for a plastics manufacturer.</li>
+    <li>A Korean tourism marketing program, extended for 3 years.</li>
+    <li>The adidas running portal, and the digital infrastructure for the &ldquo;Charge Your Friends&rdquo; campaign (Bronze Effie Russia 2016).</li>
+    <li>Michelin&rsquo;s Russian mobile website, the client&rsquo;s best project of 2012, and its self-service tire-selection system in 10+ cities.</li>
+</ul>
+
+<h1>Publication Credits</h1>
+
+<p>I have the following media credits:</p>
+<ul>
+    <li>&ldquo;Why and How to Measure the Return on Innovation&rdquo; (in Russian), RBC Trends, 2021. <a href="https://trends.rbc.ru/trends/innovation/614dc0ac9a7947c076b6b5e0">trends.rbc.ru</a></li>
+</ul>
+
+<p>I have the following research credits, among dozens of studies based on primary and secondary research:</p>
+<ul>
+    <li>&ldquo;Modern Parenting,&rdquo; for Nurofen Children, 2020.</li>
+    <li>Mobile internet penetration, for Beeline, 2020.</li>
+    <li>Branding trends in plastic consumer goods, for Plastic Republic, 2021.</li>
+    <li>The future of IT professions, for TripleTen, 2022.</li>
+    <li>Assessment of innovation adoption, for Gazprom Neft, 2022.</li>
+    <li>Retail trends, for X5, 2022.</li>
+    <li>Trends in marketplace communication, for Yandex Market, 2025 (freelance).</li>
+</ul>
+
+<p>I also write occasional essays in Russian on research and strategy on my Telegram channel, @blooblahblay, including &ldquo;Consumer Insight in Creative.&rdquo;</p>
+
+<h1>Education</h1>
+
+<p>Master of Engineering (M.Eng.) in IT and Network Security, Saint Petersburg University of Telecommunications, graduated June 2010.</p>
+
+<h1>Personal Data</h1>
+
+<p>Outside work, I love exploring new cities and getting out into nature, ideally with some physical effort involved. I have traveled to South Africa twice for the Sardine Run to watch whales and the rest of the marine life. I spent two years living in Italy, where nearly every vacation or weekend became a road trip to another region, its countryside, and its towns. I now live in Spain. I am constantly exploring new technology and love building things, and with AI agents that has become more absorbing than ever. Lately I have grown seriously interested in business analysis and may well make it a larger part of my profession.</p>
+
+<p>I have completed two 500-hour professional programs: Strategy and Creative in Marketing, and Counseling Psychology.</p>
+
+<hr>
+<address>
+Marat Raevskiy &lt;<a href="mailto:marat.raevsky@gmail.com">marat.raevsky@gmail.com</a>&gt;<br>
+Phone: +39 (378) 060-7397 &middot; WhatsApp: <a href="http://wa.me/+77054483348">wa.me/+77054483348</a><br>
+LinkedIn: <a href="https://www.linkedin.com/in/mraevskiy/">linkedin.com/in/mraevskiy</a> &middot; Spain
+</address>
+
+</body>
+</html>
